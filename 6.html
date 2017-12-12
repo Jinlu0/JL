@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="utf-8">
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.css"></script>
+<script type="text/javascript" src="jquery-ui.structure.css"></script>
+<script type="text/javascript" src="jquery-ui.theme.css"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="container" style="width:2000px"></div>
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">故事</h1></div>
+
+<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+<b>菜单</b><br>
+睡前广播<br>
+心灵鸡汤<br>
+流行音乐</div>
+
+<div id="content" style="background-color:#EEEEEE;height:200px;width:1000px;float:left;">
+<img src="0.jpg" style="height:200px;width:400px;center" >
+
+</div>
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+2491474093@qq.com</div>
+<button onclick="addNewTextTrack()" type="button">水星记：</button>
+<br> 
+<video id="video1" controls="controls">
+  <source src="gq.mp4" type="video/mp4" center>
+</video>
+</div>
+<img src="3.jpg" style="height:250px;width:500px">
+<p id="p1">长裙随急风飞舞似浪漫
+却在别时人渐散
+黑色丝巾风中牵满寂寞荡入这港湾
+随霓虹千盏风里我独站
+远望渡轮随浪去
+身边呼呼北风已经不感觉到冷
+今晚最冷已是我心间
+《深夜港湾》，深夜会发生多少，港湾又发生什么。今天不想放关淑怡青涩年代的慵懒照，也不想放香港女歌手的惯常抽烟迷离照，更不必放红唇艳照。今天只放水星。
+深夜的情绪容易被人铭记，更容易被人忘记。深夜里好似一切都自由起来，于是也就不受拘束，奔跑吹风。
+小姑娘说你见过夜的尽头么，我想说黄昏和黎明一样美丽，太阳起来又落下都是初生，小鸟小花也要睡觉呀。
+水星不用。
+<img src="1.jpg" style="height:250px;width:500px">
+我不说，除非你是星球迷，不然你可能会觉得也许这是火星啊，土星，金星或者什么星。星际是如此美丽，因为你永远不能触摸，哪怕你看到，但她早已不是你看到的模样。极少数人能踏上星球，当你踏上，也好似迷幻。有的人事物是你握在手中拥在怀里都迷幻的主儿。那又怎样。</p>
+
+<button id="hide">隐藏</button>
+<button id="show">显示</button>
+<script>
+myVid=document.getElementById("video1");
+function addNewTextTrack()
+{ 
+  text1=myVid.addTextTrack("caption");
+  text1.addCue(new TextTrackCue("Test text", 01.000, 04.000,"","","",true));
+} 
+</script> 
+
+<p>baidu<a href="http://www.baidu.com" target="_blank">点击</a>.</p>
+ 
+</body>
+</html>
